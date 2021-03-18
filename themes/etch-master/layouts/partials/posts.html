@@ -1,0 +1,17 @@
+<br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+<ul id="posts">
+{{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
+    <li>
+        <a class="post_list" href="{{ .Permalink }}">
+            <div class="post_list_title">{{ .Title }}</div>
+            <time class="date">{{ .Date.Format "Jan 2, 2006"}}</time>
+        </a> 
+    </li>
+{{- end }}
+</ul>
+
+<br>
+    <br>
+    <br>

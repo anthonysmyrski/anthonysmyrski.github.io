@@ -1,0 +1,419 @@
+@font-face {
+    font-family: GTSectra;
+    src: url('fonts/GT-Sectra-Book-Trial.woff2') format('woff2'), 
+         url('fonts/GT-Sectra-Book-Trial.woff') format('woff');
+
+    font-family: GTAmericaMed;
+    src: url('fonts/GT-America-Standard-Medium-Trial.woff2') format('woff2'), 
+         url('fonts/GT-America-Standard-Medium-Trial.woff') format('woff');
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+body {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+hr,
+section > p,
+section > footer,
+section > table {
+    width: 100%;
+}
+
+pre > code {
+    width: 97%;
+}
+
+section > dl,
+section > ol,
+section > ul {
+    width: 90%;
+}
+
+figure {
+    max-width: 90%;
+}
+
+figcaption,
+figure.fullwidth figcaption {
+    margin-right: 0%;
+    max-width: none;
+}
+
+blockquote {
+    margin-left: 1.5em;
+    margin-right: 0em;
+}
+
+blockquote p,
+blockquote footer {
+    width: 100%;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+}
+
+.sidenote,
+.marginnote {
+    display: none;
+}
+
+.margin-toggle:checked + .sidenote,
+.margin-toggle:checked + .marginnote {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    vertical-align: baseline;
+    position: relative;
+}
+
+label {
+    cursor: pointer;
+}
+
+div.table-wrapper,
+table {
+    width: 85%;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+body {
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "GTSectra", sans-serif;
+    color: #313a3d;
+    margin: 20px;
+    line-height: 2;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;  
+}
+
+a:hover {
+    text-decoration: underline;  
+}
+
+.container {
+    display: flex;
+    width: 87.5%;
+}
+
+.header {
+    grid-column: 1 / span 12;
+}
+
+.navigation {
+    grid-column: 1 / span 12;
+}
+
+.articletitle {
+    grid-column: 1 / span 12;
+}
+
+.articlebody {
+    grid-column: 1 / span 9;
+}
+
+.homepagelist {
+    grid-column: 1 / span 8;
+}
+
+header#banner {
+    margin: 100px 0px 110px 0px;
+}
+
+header#banner a {
+    font-family: "GTAmericaMed", sans-serif;
+    color: #313a3d;
+    text-decoration: none;
+}
+
+header#banner a:hover {
+    font-family: "GTAmericaMed", sans-serif;
+    text-decoration: underline;
+}
+
+header#banner h2 {
+    font-family: "GTAmericaMed", serif;
+    display: inline;
+    font-size: 4rem;
+    margin: 0 60px 0 0;
+}
+
+header#banner nav {
+    font-family: "GTAmericaMed", sans-serif;
+    display: inline-block;
+}
+
+header#banner nav ul {
+    list-style-type: none;
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+}
+
+header#banner nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+header#banner nav ul li a {
+    color: #454545;
+}
+
+
+main#content a {
+    font-family: "GTAmericaMed", sans-serif;
+    color: #007dfa;
+    text-decoration: none;
+}
+
+main#content a:hover {
+    text-decoration: underline;
+}
+
+main#content h1,
+main#content h5,
+main#content h6 {
+    font-family: "GTAmericaMed", sans-serif;
+    line-height: 1.15;
+}
+
+main#content h2 {
+    font-family: "GTAmericaMed", sans-serif;
+    font-size: 50px;
+    font-size: 3.6rem;
+    margin-top: 2rem;
+}
+
+main#content h3 {
+    font-family: "GTAmericaMed", sans-serif;
+    font-size: 20px;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+main#content h4 {
+    font-family: "GTAmericaMed", sans-serif;
+    font-size: 10px;
+    font-size: 1rem;
+}
+
+main#content p {
+    font-family: "GTSectra" sans-serif;
+    color: #394548;
+}
+
+main#content hr {
+    height: 1px;
+    border: 0;
+    background: #d8d8d8;
+}
+
+
+
+
+/* index.html styles */
+main#content ul#posts {
+    list-style-type: none;
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin-top: 0;
+    padding: 0;
+    
+}
+
+main#content ul#posts li {
+    margin: 5px 0;
+    padding: 0;
+}
+
+main#content ul#posts small {
+    font-size: 0.8em;
+    color: hsl(0, 0%, 100%);
+    margin-left: 10px;
+}
+
+main#content ul#posts li a {
+    text-decoration: none;
+}
+
+main#content ul#posts li a:hover {
+    color: #369aff;
+}
+
+main#content ul#posts li a:hover small {
+    color: inherit;
+}
+
+
+/* single.html styles */
+main#content header#post-header h1 {
+    display: block;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+
+main#content #toc {
+    border: 1px solid #b1b1b1;
+    border-radius: 1px;
+    line-height: 26px;
+    margin: 16px 0;
+    padding: 9px 14px;
+}
+
+main#content #toc h4 {
+    font-size: 1.06em;
+    color: #3d3d3d;
+    margin: 0;
+}
+
+main#content #toc nav#TableOfContents {
+    margin-top: 4px;
+}
+
+main#content #toc nav#TableOfContents > ul, main#content #toc nav#TableOfContents > ol {
+    margin-left: -40px;
+}
+
+main#content #toc ul, main#content #toc ol {
+    font-size: 0.98em;
+    margin: 0;
+    padding: 0 0 0 40px;
+}
+
+main#content #toc ul {
+    list-style-type: none;
+}
+
+main#content #toc ol {
+    counter-reset: item;
+}
+
+main#content #toc ol li {
+    display: block;
+}
+
+main#content #toc ol li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+}
+
+main#content img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main#content figure {
+    margin: 16px 0;
+}
+
+main#content figure img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main#content figure figcaption {
+    font-size: 0.92em;
+    font-style: italic;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 6px;
+    padding: 0 10px;
+}
+
+main#content figure figcaption h4 {
+    font-style: normal;
+    display: inline;
+    margin: 0;
+}
+
+main#content figure figcaption p {
+    display: inline;
+    margin: 0;
+    padding-left: 8px;
+}
+
+main#content code,
+main#content pre {
+    font-family: 'Menlo', monospace;
+}
+
+main#content code {
+    font-size: 0.96em;
+    padding: 0 5px;
+}
+
+main#content pre {
+    display: block;
+    overflow-x: auto;
+    font-size: 14px;
+    font-size: 1.4rem;
+    white-space: pre;
+    margin: 20px 0;
+    padding: 1.5rem 1.5rem;
+    line-height: 1.4;
+}
+
+main#content pre code {
+    padding: 0;
+}
+
+main#content section.footnotes {
+    font-size: 0.9em;
+}
+
+.footer {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+
+.date {
+    font-family: "GTAmericaMed", sans-serif;
+    font-size: 13px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    
+}
+
+.postlisttitle {
+    line-height: 2.75;
+    font-family: "GTSectra", serif;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+/* The mobile fallback: */
+@media (max-width: 760px) {
+  
+}

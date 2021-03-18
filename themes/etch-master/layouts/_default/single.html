@@ -1,0 +1,46 @@
+{{ define "main" }}
+<br><br><br><br><br>
+<header id="post-header">
+    <h1>{{ .Title }} {{- if isset .Params "date" -}} <br> {{ .Date.Format "January 2, 2006" }} {{- end -}}</h1>
+   
+</header>
+
+
+<article class="container">
+    
+    <div>
+        {{- .Content -}}
+    </div>
+
+
+</article>
+
+<br><br>
+
+</div>
+
+<div class="newscontainer">
+    <h2>Please subscribe to my newsletter</h2>
+  </div>
+
+<form action="action_page.php">
+    <div class="newsleft">
+      <input type="text" placeholder="You @ Email" name="mail" required>
+    </div>
+  
+    <div class="newsright">
+      <input type="submit" value="Subscribe">
+    </div>
+  </form>
+  
+</div>
+
+<!--End mc_embed_signup-->
+</div>
+
+<br><br><br><br>
+
+
+{{ end }}
+
+
